@@ -8,6 +8,7 @@ import { HighlightDirective } from './highlight.directive';
 import { EntryFormComponent } from './entry-form/entry-form.component';
 import { EntryComponent } from './entry/entry.component';
 import { EntryThoughtsComponent } from './entry-thoughts/entry-thoughts.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EntryThoughtsComponent } from './entry-thoughts/entry-thoughts.componen
     HighlightDirective,
     EntryFormComponent,
     EntryComponent,
-    EntryThoughtsComponent
+    EntryThoughtsComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
