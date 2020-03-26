@@ -18,6 +18,10 @@ export class EntryComponent implements OnInit {
     this.entries.push(entry);
   }
 
+  toggleThoughts(index){
+    this.entries[index].showThoughts=!this.entries[index].showThoughts;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
