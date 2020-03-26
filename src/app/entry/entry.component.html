@@ -1,0 +1,25 @@
+
+
+<div class="container-fluid">
+
+    <h1>Diary Entries</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <ul>
+                <div *ngFor="let entry of entries; let i=index" >
+                    <h6 id={{i}}>{{entry.title}} {{entry.entryDate|date}}</h6>
+                </div>
+            </ul>
+            
+        </div>
+        <div class="col-md-6">
+            <app-entry-form (addEntry)='addNewEntry($event)'></app-entry-form>
+            
+        </div>
+    </div>
+    
+
+    
+    
+</div>
