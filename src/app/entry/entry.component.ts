@@ -22,6 +22,16 @@ export class EntryComponent implements OnInit {
     this.entries[index].showThoughts=!this.entries[index].showThoughts;
   }
 
+  entryDelete(isDeleted,index){
+    if (isDeleted){
+      let del=confirm(`Are you sure you want to delete ${this.entries[index].title}?`)
+
+      if (del){
+        this.entries.splice(index,1);
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {

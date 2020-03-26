@@ -10,7 +10,7 @@
                 <div *ngFor="let entry of entries; let i=index" >
                     <h6 id={{i}} appHighlight>{{entry.title}} {{entry.entryDate|date}}</h6>
                     <button class="btn btn-success rounded-pill" (click)='toggleThoughts(i)'>See Notes</button>
-                    <app-entry-thoughts *ngIf="entry.showThoughts"[entry]='entry'></app-entry-thoughts>
+                    <app-entry-thoughts *ngIf="entry.showThoughts"[entry]='entry' (isDeleted)='entryDelete($event,i)'></app-entry-thoughts>
                 </div>
             </ul>
             
