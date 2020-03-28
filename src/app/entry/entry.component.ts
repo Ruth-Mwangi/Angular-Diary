@@ -13,9 +13,11 @@ export class EntryComponent implements OnInit {
 
   addNewEntry(entry){
     let entriesLength=this.entries.length;
-    entry.id=entriesLength+1;
-    entry.entryDate=new Date(entry.entryDate)
-    this.entries.push(entry);
+
+    let entryObj=new Entry(entry.id=entriesLength+1,entry.entryDate=new Date(entry.entryDate),entry.title,entry.thoughts)
+    
+    
+    this.entries.push(entryObj);
   }
 
   toggleThoughts(index){

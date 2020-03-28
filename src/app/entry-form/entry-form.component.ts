@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Entry } from '../entry';
 
+
 @Component({
   selector: 'app-entry-form',
   templateUrl: './entry-form.component.html',
@@ -12,8 +13,12 @@ export class EntryFormComponent implements OnInit {
   @Output() addEntry= new EventEmitter<Entry>();
 
   onSubmit(){
+    
     this.addEntry.emit(this.newEntry);
+    
+
   }
+  
 
   constructor() { }
 
