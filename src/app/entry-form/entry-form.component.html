@@ -2,7 +2,6 @@
     <h2 class="text-center">Add Diary Entry</h2>
     <hr>
     <form (ngSubmit)="onSubmit(form)" #form="ngForm" >
-
         <div class="form-group">
           <label for="">Entry Date</label>
           <input type="date" name="entryDate" id="entryDate" #entryDate='ngModel'[(ngModel)]="newEntry.entryDate" class="form-control" required>
