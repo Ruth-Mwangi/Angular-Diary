@@ -1,7 +1,7 @@
 <div class="container">
     <h2 class="text-center">Add Diary Entry</h2>
     <hr>
-    <form (submit)="onSubmit()" #form="ngForm" >
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm" >
 
         <div class="form-group">
           <label for="">Entry Date</label>
@@ -31,4 +31,5 @@
 
         
     </form>
+    
 </div>

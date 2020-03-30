@@ -16,7 +16,6 @@ export class EntryThoughtsComponent implements OnInit {
   deleteEntry(remove:boolean){
     this.isDeleted.emit(remove);
   }
-
   constructor() { }
 
   ngOnInit(): void {

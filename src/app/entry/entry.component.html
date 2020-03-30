@@ -13,8 +13,7 @@
                     <button class="btn btn-success rounded-pill" (click)='toggleThoughts(i)'>See Notes</button>
                     <app-entry-thoughts *ngIf="entry.showThoughts"[entry]='entry' (isDeleted)='entryDelete($event,i)'></app-entry-thoughts>
                 </div>
-            </ul>
-            
+            </ul> 
         </div>
         <div class="col-md-6">
             <app-entry-form (addEntry)='addNewEntry($event)'></app-entry-form>
