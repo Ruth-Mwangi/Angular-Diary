@@ -9,8 +9,6 @@ import { Entry } from '../entry';
 export class EntryThoughtsComponent implements OnInit {
 
   @Input() entry:Entry;
-
-
   @Output() isDeleted = new EventEmitter<boolean>();
 
   deleteEntry(remove:boolean){
