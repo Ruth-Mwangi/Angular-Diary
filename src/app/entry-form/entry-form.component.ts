@@ -14,9 +14,7 @@ export class EntryFormComponent implements OnInit {
   @Output() addEntry= new EventEmitter<Entry>();
 
   onSubmit(form:NgForm){
-    
     this.addEntry.emit(this.newEntry);
-
     form.resetForm();
   }
   
